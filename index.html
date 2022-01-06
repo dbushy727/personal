@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danny Bushkanets</title>
+
+    <style>
+      body {
+        background: #f4f8fb;
+        margin: 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+      }
+
+      .color-swatch {
+        flex-grow: 1;
+        transform: rotate3d(1, 1, 2, 45deg);
+        height: 200vh;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        font-family: "helvetica neue";
+        font-weight: 200;
+        width: 50vw;
+        align-self: center;
+      }
+
+      .sky {
+        background: #81d3eb;
+      }
+      .bloom {
+        background: #ef4056;
+      }
+      .midnight {
+        background: #001c48;
+      }
+      .peachpuff {
+        background: #ffe3ca;
+      }
+      .white {
+        background: #fffcfc;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 200;
+        margin: 1rem 0;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: circle;
+        padding: 0;
+        margin: 0.5rem 0;
+      }
+      li {
+        font-weight: 500;
+        margin-left: 1.5rem;
+      }
+      li:first-child {
+        list-style-type: none;
+        margin: 0;
+      }
+      .icon-set a {
+        font-size: 3rem;
+        text-decoration: none;
+        color: inherit;
+      }
+      .icon-set a:hover {
+        opacity: 0.7;
+      }
+
+      @media screen and (max-width: 900px) {
+        ul {
+          display: none;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/acb7da4061.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="color-swatch sky"></div>
+        <div class="color-swatch bloom"></div>
+        <div class="color-swatch midnight"></div>
+        <div class="color-swatch peachpuff"></div>
+        <div class="color-swatch white"></div>
+      </div>
+      <div class="content">
+        <h1>Danny Bushkanets</h1>
+        <ul>
+          <li>Full Stack Web Developer</li>
+          <li>Music Junkie</li>
+          <li>Travel Fanatic</li>
+        </ul>
+        <div class="icon-set">
+          <a href="https://www.linkedin.com/in/danny-bushkanets-28254646/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/dbushy727">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/mettaworldbush">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
